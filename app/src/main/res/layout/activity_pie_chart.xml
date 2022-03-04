@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/floor"
+    tools:context=".PieChartActivity">
+
+    <ir.mahozad.android.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/img_circle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBottle"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bottle"
+        android:contentDescription="Bottle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/img_circle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/circles"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C8000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_popup"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/popup_clean"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/img_btn_orange"
+            android:layout_width="252dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/botao1"
+            app:layout_constraintEnd_toEndOf="@+id/img_popup"
+            app:layout_constraintStart_toStartOf="@+id/img_popup"
+            app:layout_constraintTop_toTopOf="@+id/img_popup" />
+
+        <TextView
+            android:id="@+id/tv_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="escolha  "
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/img_btn_orange"
+            app:layout_constraintEnd_toEndOf="@+id/img_btn_orange"
+            app:layout_constraintStart_toStartOf="@+id/img_btn_orange"
+            app:layout_constraintTop_toTopOf="@+id/img_btn_orange" />
+
+        <ImageView
+            android:id="@+id/img_btn_green"
+            android:layout_width="252dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/botao2"
+            app:layout_constraintBottom_toBottomOf="@+id/img_popup"
+            app:layout_constraintEnd_toEndOf="@+id/img_popup"
+            app:layout_constraintStart_toStartOf="@+id/img_popup"
+            app:layout_constraintTop_toTopOf="@+id/img_popup" />
+
+        <TextView
+            android:id="@+id/tv_true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="verdade  "
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/img_btn_green"
+            app:layout_constraintEnd_toEndOf="@+id/img_btn_green"
+            app:layout_constraintStart_toStartOf="@+id/img_btn_green"
+            app:layout_constraintTop_toTopOf="@+id/img_btn_green" />
+
+        <ImageView
+            android:id="@+id/img_potion"
+            android:layout_width="71dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/verdade"
+            app:layout_constraintBottom_toBottomOf="@+id/img_btn_green"
+            app:layout_constraintEnd_toStartOf="@+id/img_btn_green"
+            app:layout_constraintTop_toTopOf="@+id/img_btn_green" />
+
+        <ImageView
+            android:id="@+id/img_btn_green2"
+            android:layout_width="252dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/botao3"
+            app:layout_constraintBottom_toBottomOf="@+id/img_popup"
+            app:layout_constraintEnd_toEndOf="@+id/img_popup"
+            app:layout_constraintStart_toStartOf="@+id/img_popup"
+            app:layout_constraintTop_toTopOf="@+id/img_popup" />
+
+        <TextView
+            android:id="@+id/tv_challenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="desafio  "
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/img_btn_green2"
+            app:layout_constraintEnd_toEndOf="@+id/img_btn_green2"
+            app:layout_constraintStart_toStartOf="@+id/img_btn_green2"
+            app:layout_constraintTop_toTopOf="@+id/img_btn_green2" />
+
+        <ImageView
+            android:id="@+id/img_skull"
+            android:layout_width="71dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/caveira"
+            app:layout_constraintBottom_toBottomOf="@+id/img_btn_green2"
+            app:layout_constraintEnd_toStartOf="@+id/img_btn_green2"
+            app:layout_constraintTop_toTopOf="@+id/img_btn_green2" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
